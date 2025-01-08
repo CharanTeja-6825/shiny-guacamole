@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@coreui/icons/css/all.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/@coreui/icons/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>HTML</title>
+    <style>
+        .avatar {
+            display: flex;
+            justify-content: space-between; /* Push items to the edges */
+            align-items: center; /* Vertically align items */
+            padding: 20px; /* Optional spacing */
+        }
+
+        .search-bar-container {
+            display: flex;
+            align-items: center; /* Vertically align the search bar and profile image */
+        }
+
+        .search-bar-container img {
+            margin-left: 10px; /* Spacing between search bar and profile image */
+        }
+    </style>
+</head>
+<body>
+    <div class="avatar bg-warning-subtle text-white mt-4 mx-5 p-4 rounded-5">
+        <!-- Profile Image on the Left -->
+        <img class="rounded-circle" src="user.png" alt="user-left@gmail.com" height="50px" width="50px">
+
+        <!-- Search Bar and Profile Image on the Right -->
+        <div class="search-bar-container">
+            <form class="d-flex align-items-center me-3" role="search">
+                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                <img src="search.svg" alt="search" height="30px" width="30px">
+            </form>
+            <p class="text-dark mt-2">Login</p>
+        </div>
+        
+    </div>
+</body>
+</html>
