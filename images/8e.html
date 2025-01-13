@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-family: Arial;
+            font-size: xx-large;
+        }
+        input{
+            display: block;
+            padding: 10px;
+            border: none;
+            width: 40%;
+            background-color: rgba(128, 128, 128, 0.167);
+            margin-bottom: 5px;
+        }
+        .request{
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            transition: all 0.15s;
+        }
+        .later{
+            background-color: rgba(128, 128, 128, 0.422);
+            border: none;
+            padding: 10px;
+            margin-left: 10px;
+            margin-top: 25px;
+        }
+        .request:hover{
+            background-color: rgba(146, 146, 146, 0.881);
+            color: black;
+        }
+        .later:hover{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <p>Request a ride now</p>
+    <input type="text" placeholder="Enter pickup location">
+    <input type="text" placeholder="Enter destination">
+    <button class="request">Request now</button>
+    <button class="later">Schedule for later</button>
+</body>
+</html>
